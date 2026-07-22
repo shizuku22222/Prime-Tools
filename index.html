@@ -1,81 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prime Tools</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prime Tools</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
+  <header>
+    <h1>PRIME TOOLS</h1>
+    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+</header>
 
-<h2>PRIME TOOLS</h2>
+<div class="container">
 
-<button id="mode">
-🌙
-</button>
+    <div class="card">
+        <h2>Prime API Platform</h2>
+        <p>Membuat API Key dengan cepat dan aman.</p>
 
-</nav>
-
-<section class="hero">
-
-<h1>Modern API Platform</h1>
-
-<p>
-Website API Generator Modern
-</p>
-
-<button onclick="scrollToApi()">
-Mulai
-</button>
-
-</section>
-
-<section id="api">
-
-<div class="card">
-
-<div class="api-box">
-    <h2>Generate API Key</h2>
-
-    <div class="api-row">
-        <input id="apikey" readonly placeholder="API Key akan muncul di sini">
-
-        <button class="btn" onclick="generateKey()">
-            Generate
-        </button>
-
-        <button class="btn" onclick="copyKey()">
-            Copy
-        </button>
+        <button class="btn">Mulai Sekarang</button>
     </div>
 
-<input
-id="apikey"
-readonly>
+    <div class="card api-box">
 
-<button onclick="generateKey()">
-Generate
-</button>
+        <h2>Generate API Key</h2>
 
-<button onclick="copyKey()">
-Copy
-</button>
+        <div class="api-row">
+
+            <input id="apikey" readonly placeholder="Klik Generate">
+
+            <button class="btn" onclick="generateKey()">
+                Generate
+            </button>
+
+            <button class="btn" onclick="copyKey()">
+                Copy
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Fitur</h2>
+
+        <ul>
+            <li>✅ Generate API Key</li>
+            <li>✅ Copy API Key</li>
+            <li>✅ Dark Mode</li>
+            <li>🚀 Endpoint API (Segera)</li>
+            <li>📊 Dashboard (Segera)</li>
+        </ul>
+
+    </div>
 
 </div>
 
-</section>
-
 <footer>
-
 Prime Tools © 2026
-
-</footer>
-
-<script src="script.js"></script>
+</footer>  
 
 </body>
 </html>
