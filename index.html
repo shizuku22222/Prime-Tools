@@ -38,7 +38,21 @@ Mulai
 
 <div class="card">
 
-<h2>Generate API Key</h2>
+<div class="api-box">
+    <h2>Generate API Key</h2>
+
+    <div class="api-row">
+        <input id="apikey" readonly placeholder="API Key akan muncul di sini">
+
+        <button class="btn" onclick="generateKey()">
+            Generate
+        </button>
+
+        <button class="btn" onclick="copyKey()">
+            Copy
+        </button>
+    </div>
+</div>
 
 <input
 id="apikey"
