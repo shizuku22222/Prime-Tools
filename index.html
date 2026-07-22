@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Prime Tools</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,34 +11,58 @@
 
 <body>
 
-  <header>
+<header>
+
     <h1>PRIME TOOLS</h1>
-    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+    <button class="theme-btn" onclick="toggleTheme()">
+        🌙
+    </button>
+
 </header>
 
 <div class="container">
 
-    <div class="card">
-        <h2>Prime API Platform</h2>
-        <p>Membuat API Key dengan cepat dan aman.</p>
+    <div class="card hero">
 
-        <button class="btn">Mulai Sekarang</button>
+        <h2>Prime API Platform</h2>
+
+        <p>
+            Website API Generator Modern.
+        </p>
+
+        <button class="btn" onclick="scrollToApi()">
+            Mulai Sekarang
+        </button>
+
     </div>
 
-    <div class="card api-box">
+    <div class="card api-box" id="api">
 
         <h2>Generate API Key</h2>
 
         <div class="api-row">
 
-            <input id="apikey" readonly placeholder="Klik Generate">
+            <input
+                id="apikey"
+                type="text"
+                readonly
+                placeholder="Klik Generate API Key">
 
-            <button class="btn" onclick="generateKey()">
+            <button
+                class="btn"
+                onclick="generateKey()">
+
                 Generate
+
             </button>
 
-            <button class="btn" onclick="copyKey()">
+            <button
+                class="btn"
+                onclick="copyKey()">
+
                 Copy
+
             </button>
 
         </div>
@@ -48,14 +71,17 @@
 
     <div class="card">
 
-        <h2>Fitur</h2>
+        <h2>Fitur Prime Tools</h2>
 
         <ul>
+
             <li>✅ Generate API Key</li>
             <li>✅ Copy API Key</li>
             <li>✅ Dark Mode</li>
-            <li>🚀 Endpoint API (Segera)</li>
-            <li>📊 Dashboard (Segera)</li>
+            <li>🚀 Endpoint API</li>
+            <li>📊 Dashboard</li>
+            <li>🔐 Login Member</li>
+
         </ul>
 
     </div>
@@ -63,8 +89,13 @@
 </div>
 
 <footer>
-Prime Tools © 2026
-</footer>  
+
+    Prime Tools © 2026
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
